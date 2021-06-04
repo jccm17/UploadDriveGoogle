@@ -87,7 +87,7 @@ public class upload extends javax.swing.JFrame {
     public void uploadPost(java.io.File file) throws Exception {
         CloseableHttpClient httpclient = HttpClients.createDefault();
         try {
-            HttpPost httppost = new HttpPost("https://api.imgbb.com/1/upload?key=f67a162ec614630d7fca3c6db587518e");
+            HttpPost httppost = new HttpPost("https://api.imgbb.com/1/upload?expiration=600&key=71de2823969a5817bc07f2616ae39315");
 
             //FileBody bin = new FileBody(file);
             StringBody comment = new StringBody("A binary file of some kind", ContentType.TEXT_PLAIN);
